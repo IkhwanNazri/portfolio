@@ -1,26 +1,123 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-cream: #f4f1ea;
+  --accent-blue: #3b59ff;
+  --text-dark: #1a1a1a;
+  --border-blue: rgba(59, 89, 255, 0.3);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-bg-cream: var(--bg-cream);
+  --color-accent-blue: var(--accent-blue);
+  --color-text-dark: var(--text-dark);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-cream);
+  color: var(--text-dark);
+  font-family: var(--font-plus-jakarta), sans-serif;
+  margin: 0;
+  padding: 0;
+  /* Premium Paper texture */
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+  background-attachment: fixed;
+}
+
+/* Custom Styles */
+.heading-wide {
+  font-family: var(--font-archivo-black), sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  font-weight: 900;
+}
+
+.section-divider {
+  height: 1.5px;
+  background-color: var(--accent-blue);
+  width: 100%;
+}
+
+.interest-chip {
+  border: 1.5px solid var(--text-dark);
+  border-radius: 999px;
+  padding: 6px 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.interest-chip:hover {
+  background-color: var(--accent-blue);
+  color: white;
+  border-color: var(--accent-blue);
+}
+
+.skill-tile {
+  background-color: #1a1a1a;
+  color: white;
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.4rem;
+  transition: transform 0.2s ease;
+}
+
+.skill-tile:hover {
+  transform: scale(1.1);
+  background-color: var(--accent-blue);
+}
+
+.blue-line {
+  height: 2px;
+  background-color: var(--accent-blue);
+}
+
+.image-mask {
+  background-color: var(--accent-blue);
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+/* Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-container {
+  overflow: hidden;
+  background-color: #1a1a1a;
+  padding: 14px 0;
+  border-bottom: 2px solid #5c6fff;
+}
+
+.blue-section {
+  background-color: #5c6fff;
+  position: relative;
+  overflow: hidden;
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  /* Texture added for depth */
+}
+
+.logofolio-text {
+  font-family: var(--font-archivo-black), sans-serif;
+  line-height: 0.8;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
 }
