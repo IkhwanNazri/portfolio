@@ -45,6 +45,115 @@ export default function Home() {
 
   return (
     <div className="min-h-screen relative font-plus-jakarta antialiased">
+      {/* Hero Section (Folder Layout) */}
+      <section
+        className="relative w-full h-[90vh] md:h-screen overflow-hidden flex items-center justify-center bg-[url('/images/images-01.webp')] bg-cover bg-center"
+      >
+        <div
+          className="absolute z-0 flex flex-col items-center -translate-x-[50%] md:-translate-x-[40%] -translate-y-10 md:-translate-y-40"
+        >
+          <h1
+            className="text-[18vw] font-extrabold text-[#596AFA] select-none tracking-tight uppercase leading-[0.8] -translate-x-[20%] md:-translate-x-[10%]"
+            style={{
+              fontFamily: '"Open Sans", sans-serif',
+              fontVariationSettings: '"wdth" 75',
+            }}
+          >
+            PORT
+          </h1>
+          <div
+            className="w-[80%] h-[1.5vw] bg-[#596AFA] mt-[2vw] -translate-x-[50%] md:-translate-x-[15%]"
+          ></div>
+          <p
+            className="text-xl font-regular text-black uppercase tracking-widest mt-2 -translate-x-[100%] md:-translate-x-[140%]"
+            style={{
+              fontFamily: '"Open Sans", sans-serif',
+              fontVariationSettings: '"wdth" 75',
+            }}
+          >
+            WEB DEVELOPER
+          </p>
+        </div>
+        
+        {/* folio text */}
+        <div
+          className="absolute z-0 flex flex-col items-center translate-x-[50%] md:translate-x-[40%] translate-y-[20%] md:translate-y-[25%]"
+        >
+          <p
+            className="text-xl font-regular text-black uppercase tracking-widest translate-x-[80%] md:translate-x-[150%]"
+            style={{
+              fontFamily: '"Open Sans", sans-serif',
+              fontVariationSettings: '"wdth" 75',
+            }}
+          >
+            GRAPHIC DESIGNER
+          </p>
+          <div
+            className="w-[80%] h-[1.5vw] bg-[#596AFA] mb-[2vw] translate-x-[50%] md:translate-x-[15%]"
+          ></div>
+
+          <h1
+            className="text-[18vw] font-extrabold text-[#596AFA] select-none tracking-tight uppercase leading-[0.8] translate-x-[20%] md:translate-x-[10%]"
+            style={{
+              fontFamily: '"Open Sans", sans-serif',
+              fontVariationSettings: '"wdth" 75',
+            }}
+          >
+            FOLIO
+          </h1>
+        </div>
+
+        {/* folder menu content */}
+        <div
+          className="absolute z-20 flex flex-col gap-[2.2vw] w-[40vw] md:w-[25vw] -translate-x-[2vw] translate-y-[5vw]"
+        >
+          {/* About Me */}
+          <div className="flex items-center cursor-pointer group">
+            <div
+              className="text-white font-bold text-[2.5vw] md:text-[1.8vw] w-[6vw] text-center"
+            >
+              01
+            </div>
+            <div
+              className="text-white font-bold text-[2.5vw] md:text-[1.8vw] uppercase tracking-widest pl-[2vw] group-hover:text-blue-200 transition-colors"
+            >
+              About Me
+            </div>
+          </div>
+          {/* Web Project */}
+          <div className="flex items-center cursor-pointer group">
+            <div
+              className="text-white font-bold text-[2.5vw] md:text-[1.8vw] w-[6vw] text-center"
+            >
+              02
+            </div>
+            <div
+              className="text-white font-bold text-[2.5vw] md:text-[1.8vw] uppercase tracking-widest pl-[2vw] group-hover:text-blue-200 transition-colors"
+            >
+              Web Project
+            </div>
+          </div>
+          {/* Design Project */}
+          <div className="flex items-center cursor-pointer group">
+            <div
+              className="text-white font-bold text-[2.5vw] md:text-[1.8vw] w-[6vw] text-center"
+            >
+              03
+            </div>
+            <div
+              className="text-white font-bold text-[2.5vw] md:text-[1.8vw] uppercase tracking-widest pl-[1vw] group-hover:text-blue-200 transition-colors"
+            >
+              Design Project
+            </div>
+          </div>
+        </div>
+
+        {/* Folder Frame Image */}
+        <div
+          className="absolute inset-0 z-10 bg-[url('/images/file.webp')] bg-contain bg-center bg-no-repeat scale-125 md:scale-100"
+        ></div>
+      </section>
+
       {/* Visual background elements */}
       <div className="fixed top-0 left-0 w-full h-full pointer-events-none opacity-40 z-0 select-none overflow-hidden">
         <Sparkles className="absolute top-[10%] left-[5%] text-accent-blue/10" size={150} />
@@ -56,6 +165,7 @@ export default function Home() {
           {/* LEFT COLUMN: Sidebar style */}
           <div className="space-y-12">
             {/* Profile Area */}
+
             <div className="relative w-full aspect-[4/5] mb-12">
               {/* Blue Background (Ngam & Clean) */}
               <div className="absolute inset-0 bg-accent-blue rounded-full shadow-2xl ">
@@ -163,7 +273,7 @@ export default function Home() {
                 <h2 className="heading-wide text-4xl tracking-tighter">About Me</h2>
               </div>
               <p className="text-[1.35rem] leading-[1.65] font-semibold text-gray-700 tracking-tight max-w-2xl italic">
-                "I'm a Malaysian designer specialized in branding and graphic design. My passion lies in crafting and enhancing projects that stand out with a distinctive style."
+                &quot;I&apos;m a Malaysian designer specialized in branding and graphic design. My passion lies in crafting and enhancing projects that stand out with a distinctive style.&quot;
               </p>
               <p className="text-lg leading-[1.8] font-medium text-gray-600 mt-6 max-w-3xl">
                 Inspired by the stars, I believe in limitless creativity, where every idea has the potential to shine
@@ -244,8 +354,8 @@ export default function Home() {
         </div>
 
         {/* Center Content */}
-        <div className="flex-1 flex flex-col items-center justify-center text-white p-10 relative">
-          <Sparkles size={120} className="mb-8 text-black opacity-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-[4]" fill="currentColor" />
+        <div className="flex-1 flex flex-col items-center justify-center text-white p-30 relative">
+          <Sparkles size={120} className="mb-20 text-black opacity-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-[4]" fill="currentColor" />
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -254,7 +364,7 @@ export default function Home() {
           >
             <Sparkles size={64} className="mb-10 text-black" fill="currentColor" />
             <h2 className="logofolio-text text-[8rem] md:text-[15rem] leading-[0.8] text-center text-white">
-              LOGO<br />FOLIO
+              WEB<br />PROJECTS
             </h2>
           </motion.div>
         </div>
@@ -287,7 +397,7 @@ export default function Home() {
             </h2>
           </div>
           <p className="max-w-sm text-gray-500 font-bold leading-relaxed italic">
-            "Merging high-end graphic design with functional, robust web development to create unique digital experiences."
+            &quot;Merging high-end graphic design with functional, robust web development to create unique digital experiences.&quot;
           </p>
         </div>
 
