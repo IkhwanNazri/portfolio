@@ -40,7 +40,14 @@ export default function Home() {
     }
   ];
 
-  const technicalSkills = ["Ai", "Ps", "Ae", "Fi"];
+  const technicalSkills = [
+    { name: "Ai", color: "#FF9A00", logo: "ps" },
+    { name: "Ps", color: "#1774b6ff", logo: "ai" },
+    { name: "Laravel", color: "#FF2D20" },
+    { name: "PHP", color: "#777BB4" },
+    { name: "Microsoft", color: "#00A4EF", logo: "word" },
+    { name: "Figma", color: "#F24E1E" }
+  ];
   const interests = ["Design", "Arts & Craft", "Music", "Cinema", "Design thinking", "Develop"];
 
   return (
@@ -65,25 +72,27 @@ export default function Home() {
             className="w-[80%] h-[1.5vw] bg-[#596AFA] mt-[2vw] -translate-x-[50%] md:-translate-x-[15%]"
           ></div>
           <p
-            className="text-xl font-regular text-black uppercase tracking-widest mt-2 -translate-x-[100%] md:-translate-x-[140%]"
+            className="text-xl font-regular text-black uppercase tracking-widest mt-2 -translate-x-[100%] md:-translate-x-[50%]"
             style={{
               fontFamily: '"Open Sans", sans-serif',
-              fontVariationSettings: '"wdth" 75',
+              fontWeight: 700,
+              fontVariationSettings: '"wdth" 100',
             }}
           >
             WEB DEVELOPER
           </p>
         </div>
-        
+
         {/* folio text */}
         <div
           className="absolute z-0 flex flex-col items-center translate-x-[50%] md:translate-x-[40%] translate-y-[20%] md:translate-y-[25%]"
         >
           <p
-            className="text-xl font-regular text-black uppercase tracking-widest translate-x-[80%] md:translate-x-[150%]"
+            className="text-xl font-regular text-black uppercase tracking-widest translate-x-[80%] md:translate-x-[70%]"
             style={{
               fontFamily: '"Open Sans", sans-serif',
-              fontVariationSettings: '"wdth" 75',
+              fontWeight: 700,
+              fontVariationSettings: '"wdth" 100',
             }}
           >
             GRAPHIC DESIGNER
@@ -105,59 +114,63 @@ export default function Home() {
 
         {/* folder menu content */}
         <div
-          className="absolute z-20 flex flex-col gap-[2.2vw] w-[40vw] md:w-[25vw] -translate-x-[2vw] translate-y-[5vw]"
+          className="absolute z-20 flex flex-col gap-[11.5vw] md:gap-[2.6vw] left-[52.2%] top-[64.5%] md:top-[57.5%] -translate-x-1/2 -translate-y-1/2"
         >
           {/* About Me */}
-          <div className="flex items-center cursor-pointer group">
-            <div
-              className="text-white font-bold text-[2.5vw] md:text-[1.8vw] w-[6vw] text-center"
-            >
+          <a href="#about-me" className="flex items-center no-underline text-white hover:text-white group transition-transform hover:scale-105">
+            <div className="font-bold text-[4.8vw] md:text-[2.2vw] translate-x-[6vw] md:translate-x-[-3.5vw] translate-y-0">
               01
             </div>
-            <div
-              className="text-white font-bold text-[2.5vw] md:text-[1.8vw] uppercase tracking-widest pl-[2vw] group-hover:text-blue-200 transition-colors"
-            >
+            <div className="font-bold text-[4.8vw] md:text-[2.2vw] uppercase tracking-widest translate-x-[16vw] md:translate-x-[1vw] translate-y-0">
               About Me
             </div>
-          </div>
+          </a>
+
           {/* Web Project */}
-          <div className="flex items-center cursor-pointer group">
-            <div
-              className="text-white font-bold text-[2.5vw] md:text-[1.8vw] w-[6vw] text-center"
-            >
+          <a href="#web-projects" className="flex items-center no-underline text-white hover:text-white group transition-transform hover:scale-105">
+            <div className="font-bold text-[4.8vw] md:text-[2.2vw] translate-x-[6vw] md:translate-x-[-3.5vw] translate-y-0">
               02
             </div>
-            <div
-              className="text-white font-bold text-[2.5vw] md:text-[1.8vw] uppercase tracking-widest pl-[2vw] group-hover:text-blue-200 transition-colors"
-            >
+            <div className="font-bold text-[4.8vw] md:text-[2.2vw] uppercase tracking-widest translate-x-[16vw] md:translate-x-[1vw] translate-y-0">
               Web Project
             </div>
-          </div>
+          </a>
+
           {/* Design Project */}
-          <div className="flex items-center cursor-pointer group">
-            <div
-              className="text-white font-bold text-[2.5vw] md:text-[1.8vw] w-[6vw] text-center"
-            >
+          <a href="#design-projects" className="flex items-center no-underline text-white hover:text-white group transition-transform hover:scale-105">
+            <div className="font-bold text-[4.8vw] md:text-[2.2vw] translate-x-[6vw] md:translate-x-[-3.5vw] translate-y-0">
               03
             </div>
-            <div
-              className="text-white font-bold text-[2.5vw] md:text-[1.8vw] uppercase tracking-widest pl-[1vw] group-hover:text-blue-200 transition-colors"
-            >
+            <div className="font-bold text-[4.8vw] md:text-[2.2vw] uppercase tracking-widest translate-x-[16vw] md:translate-x-[1vw] translate-y-0">
               Design Project
             </div>
-          </div>
+          </a>
         </div>
 
         {/* Folder Frame Image */}
         <div
-          className="absolute inset-0 z-10 bg-[url('/images/file.webp')] bg-contain bg-center bg-no-repeat scale-125 md:scale-100"
+          className="absolute inset-0 z-10 bg-[url('/images/file.webp')] bg-contain bg-center bg-no-repeat scale-[1.65] md:scale-100"
         ></div>
-      </section>
+      </section >
+      <div className="marquee-container z-20">
+        <div className="animate-marquee whitespace-nowrap flex items-center gap-12 text-white/90 text-sm font-black tracking-widest uppercase">
+          {[...Array(10)].map((_, i) => (
+            <div key={i} className="flex items-center gap-8">
+              <span>PORTFOLIO</span>
+              <div className="w-5 h-5 rounded-full border border-white/40 flex items-center justify-center"><Sparkles size={10} fill="currentColor" /></div>
+              <span>2025</span>
+              <div className="w-5 h-5 rounded-full border border-white/40 flex items-center justify-center font-bold text-[8px]">S</div>
+              <span>IKHWAN NAZRI</span>
+              <div className="w-5 h-5 rounded-full border border-white/40 flex items-center justify-center"><Sparkles size={10} fill="currentColor" /></div>
+            </div>
+          ))}
+        </div>
+      </div>
 
       {/* Visual background elements */}
-      <div className="fixed top-0 left-0 w-full h-full pointer-events-none opacity-40 z-0 select-none overflow-hidden">
+      < div className="fixed top-0 left-0 w-full h-full pointer-events-none opacity-40 z-0 select-none overflow-hidden" >
         <Sparkles className="absolute top-[10%] left-[5%] text-accent-blue/10" size={150} />
-      </div>
+      </div >
 
       <div className="max-w-6xl mx-auto p-8 md:p-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-16 relative">
@@ -200,7 +213,7 @@ export default function Home() {
                   <div className="w-11 h-11 bg-text-dark text-white rounded-xl flex items-center justify-center shadow-md group-hover:bg-accent-blue transition-colors">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2C10.8954 2 10 2.89543 10 4V14.1706C9.48912 13.8824 8.89456 13.7143 8.26087 13.7143C6.4604 13.7143 5 15.1747 5 16.9752C5 18.7756 6.4604 20.236 8.26087 20.236C10.0613 20.236 11.5217 18.7756 11.5217 16.9752V7H12.422C14.1594 7 15.5414 8.01235 16.0357 10H18V7C16.8954 7 16 6.10457 16 5V2H12Z" /></svg>
                   </div>
-                  <span className="font-bold text-sm tracking-tight text-gray-700 underline-offset-8 decoration-accent-blue decoration-2 hover:underline">Tiktok</span>
+                  <span className="font-bold text-sm tracking-tight text-gray-700 underline-offset-8 decoration-accent-blue decoration-2 hover:underline">@Build With Wan</span>
                 </div>
                 {/* Gmail */}
                 <div className="flex items-center gap-5 group cursor-pointer">
@@ -210,7 +223,7 @@ export default function Home() {
                 {/* GitHub */}
                 <div className="flex items-center gap-5 group cursor-pointer">
                   <div className="w-11 h-11 bg-text-dark text-white rounded-xl flex items-center justify-center shadow-md group-hover:bg-accent-blue transition-colors"><Github size={20} /></div>
-                  <span className="font-bold text-sm tracking-tight underline decoration-accent-blue underline-offset-8 decoration-2 text-gray-800">IkhwanNazri-github</span>
+                  <span className="font-bold text-sm tracking-tight underline decoration-accent-blue underline-offset-8 decoration-2 text-gray-800">https://github.com/IkhwanNazri</span>
                 </div>
               </div>
             </section>
@@ -222,11 +235,29 @@ export default function Home() {
                 <Sparkles size={20} className="text-accent-blue" fill="currentColor" />
               </div>
               <div className="grid grid-cols-4 gap-4">
-                {technicalSkills.map((skill) => (
-                  <div key={skill} className="skill-tile shadow-lg">
-                    {skill}
-                  </div>
-                ))}
+                {technicalSkills.map((skill) => {
+                  const isAdobe = ["Ai", "Ps", "Ae", "Lr"].includes(skill.name);
+                  return (
+                    <div
+                      key={skill.name}
+                      className="skill-tile shadow-lg flex flex-col items-center justify-center gap-1 !w-16 !h-16 md:!w-20 md:!h-20"
+                      style={{ backgroundColor: skill.color }}
+                    >
+                      {isAdobe ? (
+                        <span className="text-2xl md:text-3xl font-black text-white">{skill.name}</span>
+                      ) : (
+                        <>
+                          <img
+                            src={`https://cdn.simpleicons.org/${skill.name.toLowerCase()}`}
+                            alt={skill.name}
+                            className="w-7 h-7 md:w-9 md:h-9 brightness-0 invert"
+                          />
+                          <span className="text-[8px] md:text-[10px] font-black uppercase text-white/90">{skill.name}</span>
+                        </>
+                      )}
+                    </div>
+                  );
+                })}
               </div>
             </section>
 
@@ -267,7 +298,7 @@ export default function Home() {
           {/* RIGHT COLUMN: Content Style */}
           <div className="space-y-20">
             {/* ABOUT ME */}
-            <section className="relative pt-10">
+            <section id="about-me" className="relative pt-10 scroll-mt-20">
               <div className="flex items-center gap-3 mb-8">
                 <Sparkles size={32} className="text-accent-blue animate-pulse" fill="currentColor" />
                 <h2 className="heading-wide text-4xl tracking-tighter">About Me</h2>
@@ -336,7 +367,7 @@ export default function Home() {
       </div>
 
       {/* LOGOFOLIO SECTION */}
-      <section className="blue-section min-h-[70vh] flex flex-col mt-40">
+      <section id="design-projects" className="blue-section min-h-[70vh] flex flex-col mt-40 scroll-mt-20">
         {/* Marquee Bar */}
         <div className="marquee-container z-20">
           <div className="animate-marquee whitespace-nowrap flex items-center gap-12 text-white/90 text-sm font-black tracking-widest uppercase">
@@ -385,7 +416,7 @@ export default function Home() {
       </div>
 
       {/* WEB PROJECTS SECTION */}
-      <section className="max-w-7xl mx-auto px-8 md:px-16 py-40">
+      <section id="web-projects" className="max-w-7xl mx-auto px-8 md:px-16 py-40 scroll-mt-20">
         <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
           <div>
             <div className="flex items-center gap-3 mb-4">
@@ -404,11 +435,26 @@ export default function Home() {
         {/* Parallel Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-24">
           {[
-            { id: "01", title: "Pusat Tuisyen Akademik Terbilang", category: "Full-stack Tuition Management System", img: "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&q=80&w=800" },
-            { id: "02", title: "NEO ARCHIVE", category: "Portfolio Engine", img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" },
+            {
+              id: "01",
+              title: "Pusat Tuisyen Akademik Terbilang",
+              category: "Full-stack Tuition Management System",
+              img: "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&q=80&w=800",
+              link: "https://tuisyenakademikterbilang.com/",
+              tech: ["Laravel", "Filament", "Tailwind CSS"]
+            },
+            {
+              id: "02",
+              title: "GAFSTORE",
+              category: "GADGET LANDING PAGE",
+              img: "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&q=80&w=800",
+              link: "https://gafstore.github.io/",
+              tech: ["Bootstrap"]
+            },
+
             { id: "03", title: "CYBER PULSE", category: "Real-time Dashboard", img: "https://images.unsplash.com/photo-1551288049-762281abb20d?auto=format&fit=crop&q=80&w=800" },
             { id: "04", title: "VINTAGE CO.", category: "Marketing Platform", img: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800" }
-          ].map((project, i) => (
+          ].map((project: any, i) => (
             <motion.div
               key={project.id}
               initial={{ opacity: 0, y: 50 }}
@@ -417,7 +463,11 @@ export default function Home() {
               transition={{ delay: i * 0.1 }}
               className={`group flex flex-col ${i % 2 === 1 ? 'md:translate-y-24' : ''}`}
             >
-              <div className="relative aspect-[16/10] overflow-hidden rounded-[32px] bg-gray-200 mb-8 shadow-xl">
+              <a
+                href={project.link || "#"}
+                target={project.link ? "_blank" : "_self"}
+                className="relative aspect-[16/10] overflow-hidden rounded-[32px] bg-gray-200 mb-8 shadow-xl block"
+              >
                 <img
                   src={project.img}
                   alt={project.title}
@@ -431,11 +481,20 @@ export default function Home() {
                 <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-md px-4 py-1 rounded-full text-[10px] font-black tracking-widest text-accent-blue">
                   {project.id}
                 </div>
-              </div>
+              </a>
               <div className="flex items-start justify-between">
                 <div>
                   <h3 className="heading-wide text-3xl mb-1">{project.title}</h3>
                   <p className="font-bold text-gray-400 italic text-sm">{project.category}</p>
+                  {project.tech && (
+                    <div className="flex flex-wrap gap-2 mt-4">
+                      {project.tech.map((t: string) => (
+                        <span key={t} className="px-3 py-1 bg-white/50 backdrop-blur-sm border border-accent-blue/20 text-accent-blue text-[9px] font-black uppercase rounded-full tracking-wider shadow-sm">
+                          {t}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 </div>
                 <div className="blue-line w-8 h-[2px] mt-4" />
               </div>
@@ -461,6 +520,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
