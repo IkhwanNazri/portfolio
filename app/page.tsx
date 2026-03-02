@@ -56,11 +56,16 @@ export default function Home() {
       <section
         className="relative w-full h-[90vh] md:h-screen overflow-hidden flex items-center justify-center bg-[url('/images/images-01.webp')] bg-cover bg-center"
       >
+        {/* PORT text */}
         <div
-          className="absolute z-0 flex flex-col items-center -translate-x-[50%] md:-translate-x-[40%] -translate-y-10 md:-translate-y-40"
+          className="absolute z-0 flex flex-col items-center
+          -translate-x-[45%] -translate-y-[15%]
+          md:-translate-x-[40%] md:-translate-y-40"
         >
           <h1
-            className="text-[18vw] font-extrabold text-[#596AFA] select-none tracking-tight uppercase leading-[0.8] -translate-x-[20%] md:-translate-x-[10%]"
+            className="text-[18vw] font-extrabold text-[#596AFA] select-none tracking-tight uppercase leading-[0.8]
+            -translate-x-[15%]
+            md:-translate-x-[10%]"
             style={{
               fontFamily: '"Open Sans", sans-serif',
               fontVariationSettings: '"wdth" 75',
@@ -69,10 +74,16 @@ export default function Home() {
             PORT
           </h1>
           <div
-            className="w-[80%] h-[1.5vw] bg-[#596AFA] mt-[2vw] -translate-x-[50%] md:-translate-x-[15%]"
+            className="w-[80%] h-[1.5vw] bg-[#596AFA]
+            mt-[2vw]
+            -translate-x-[40%]
+            md:-translate-x-[15%]"
           ></div>
           <p
-            className="text-xl font-regular text-black uppercase tracking-widest mt-2 -translate-x-[100%] md:-translate-x-[50%]"
+            className="text-[2.8vw] md:text-xl font-regular text-black uppercase tracking-widest
+            mt-2
+            -translate-x-[80%]
+            md:-translate-x-[50%]"
             style={{
               fontFamily: '"Open Sans", sans-serif',
               fontWeight: 700,
@@ -83,12 +94,16 @@ export default function Home() {
           </p>
         </div>
 
-        {/* folio text */}
+        {/* FOLIO text */}
         <div
-          className="absolute z-0 flex flex-col items-center translate-x-[50%] md:translate-x-[30%] translate-y-[20%] md:translate-y-[25%]"
+          className="absolute z-0 flex flex-col items-center
+          translate-x-[45%] translate-y-[22%]
+          md:translate-x-[30%] md:translate-y-[25%]"
         >
           <p
-            className="text-xl font-regular text-black uppercase tracking-widest translate-x-[80%] md:translate-x-[100%]"
+            className="text-[2.8vw] md:text-xl font-regular text-black uppercase tracking-widest
+            translate-x-[60%]
+            md:translate-x-[100%]"
             style={{
               fontFamily: '"Open Sans", sans-serif',
               fontWeight: 700,
@@ -98,11 +113,16 @@ export default function Home() {
             GRAPHIC DESIGNER
           </p>
           <div
-            className="w-[80%] h-[1.5vw] bg-[#596AFA] mb-[2vw] translate-x-[50%] md:translate-x-[15%]"
+            className="w-[80%] h-[1.5vw] bg-[#596AFA]
+            mb-[2vw]
+            translate-x-[40%]
+            md:translate-x-[15%]"
           ></div>
 
           <h1
-            className="text-[18vw] font-extrabold text-[#596AFA] select-none tracking-tight uppercase leading-[0.8] translate-x-[5%] md:translate-x-[10%]"
+            className="text-[18vw] font-extrabold text-[#596AFA] select-none tracking-tight uppercase leading-[0.8]
+            translate-x-[5%]
+            md:translate-x-[10%]"
             style={{
               fontFamily: '"Open Sans", sans-serif',
               fontVariationSettings: '"wdth" 75',
@@ -112,34 +132,56 @@ export default function Home() {
           </h1>
         </div>
 
-        {/* folder menu content */}
+        {/* Folder menu content */}
         <div
-          className="absolute z-20 flex flex-col gap-[11.5vw] md:gap-[2.6vw] left-[52.2%] top-[64.5%] md:top-[57.5%] -translate-x-1/2 -translate-y-1/2"
+          // className="absolute z-20 flex flex-col
+          // gap-[10vw] left-[52%] top-[63%]
+          // md:gap-[2.6vw] md:left-[52.2%] md:top-[57.5%]
+          // -translate-x-1/2 -translate-y-1/2"
+          className="absolute z-20 flex flex-col
+    gap-[5vw] left-[52.2%] top-[55%]
+    md:gap-[2.6vw] md:left-[52.2%] md:top-[57.5%]
+    -translate-x-1/2 -translate-y-1/2"
+        // className="absolute z-20 flex flex-col
+        // gap-[1.5vw] left-[50%] top-[54%]
+        // md:gap-[2.6vw] md:left-[52.2%] md:top-[57.5%]
+        // -translate-x-1/2 -translate-y-1/2"
         >
           {/* About Me */}
-          <a href="#about-me" className="flex items-center no-underline text-white hover:text-white group transition-transform hover:scale-105">
-            <div className="font-bold text-[4.8vw] md:text-[2.2vw] translate-x-[-4.5vw] md:translate-x-[-3.5vw] translate-y-0">
+          <a
+            href="#about-me"
+            className="flex items-center no-underline text-white hover:text-white group transition-transform hover:scale-105"
+          >
+            <div className="font-bold text-[4.5vw] md:text-[2.2vw] translate-x-[-4.5vw] md:translate-x-[-3.5vw]">
               01
             </div>
-            <div className="font-bold text-[4.8vw] md:text-[2.2vw] uppercase tracking-widest translate-x-[4.5vw] md:translate-x-[1vw] translate-y-0">
+            <div className="font-bold text-[4.5vw] md:text-[2.2vw] uppercase tracking-widest translate-x-[4.5vw] md:translate-x-[1vw]">
               About Me
             </div>
           </a>
+
           {/* Web Project */}
-          <a href="#web-projects" className="flex items-center no-underline text-white hover:text-white group transition-transform hover:scale-105">
-            <div className="font-bold text-[4.8vw] md:text-[2.2vw] translate-x-[-4.5vw] md:translate-x-[-3.5vw] translate-y-0">
+          <a
+            href="#web-projects"
+            className="flex items-center no-underline text-white hover:text-white group transition-transform hover:scale-105"
+          >
+            <div className="font-bold text-[4.5vw] md:text-[2.2vw] translate-x-[-4.5vw] md:translate-x-[-3.5vw]">
               02
             </div>
-            <div className="font-bold text-[4.8vw] md:text-[2.2vw] uppercase tracking-widest translate-x-[4.5vw] md:translate-x-[1vw] translate-y-0">
+            <div className="font-bold text-[4.5vw] md:text-[2.2vw] uppercase tracking-widest translate-x-[4.5vw] md:translate-x-[1vw] whitespace-nowrap">
               Web Project
             </div>
           </a>
+
           {/* Design Project */}
-          <a href="#design-projects" className="flex items-center no-underline text-white hover:text-white group transition-transform hover:scale-105">
-            <div className="font-bold text-[4.8vw] md:text-[2.2vw] translate-x-[-4.5vw] md:translate-x-[-3.5vw] translate-y-0">
+          <a
+            href="#design-projects"
+            className="flex items-center no-underline text-white hover:text-white group transition-transform hover:scale-105"
+          >
+            <div className="font-bold text-[4.5vw] md:text-[2.2vw] translate-x-[-4.5vw] md:translate-x-[-3.5vw]">
               03
             </div>
-            <div className="font-bold text-[4.8vw] md:text-[2.2vw] uppercase tracking-widest translate-x-[4.5vw] md:translate-x-[1vw] translate-y-0">
+            <div className="font-bold text-[4.5vw] md:text-[2.2vw] uppercase tracking-widest translate-x-[4.5vw] md:translate-x-[1vw] whitespace-nowrap">
               Design Project
             </div>
           </a>
@@ -147,9 +189,14 @@ export default function Home() {
 
         {/* Folder Frame Image */}
         <div
-          className="absolute inset-0 z-10 bg-[url('/images/file.webp')] bg-contain bg-center bg-no-repeat scale-[1.65] md:scale-100"
+          className="absolute inset-0 z-10 bg-[url('/images/file.webp')] bg-contain bg-center bg-no-repeat
+          scale-[1.65]
+          md:scale-100"
         ></div>
-      </section >
+      </section>
+
+
+
       <div className="marquee-container z-20">
         <div className="animate-marquee whitespace-nowrap flex items-center gap-12 text-white/90 text-sm font-black tracking-widest uppercase">
           {[...Array(10)].map((_, i) => (
