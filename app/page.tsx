@@ -211,7 +211,7 @@ export default function Home() {
                   <div className="w-11 h-11 bg-text-dark text-white rounded-xl flex items-center justify-center shadow-md group-hover:bg-accent-blue transition-colors">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2C10.8954 2 10 2.89543 10 4V14.1706C9.48912 13.8824 8.89456 13.7143 8.26087 13.7143C6.4604 13.7143 5 15.1747 5 16.9752C5 18.7756 6.4604 20.236 8.26087 20.236C10.0613 20.236 11.5217 18.7756 11.5217 16.9752V7H12.422C14.1594 7 15.5414 8.01235 16.0357 10H18V7C16.8954 7 16 6.10457 16 5V2H12Z" /></svg>
                   </div>
-                  <span className="font-bold text-sm tracking-tight text-gray-700 underline-offset-8 decoration-accent-blue decoration-2 hover:underline">@Build With Wan</span>
+                  <a href="https://www.tiktok.com/@buildwith.wan" className="font-bold text-sm tracking-tight text-gray-700 underline-offset-8 decoration-accent-blue decoration-2 hover:underline">@Build With Wan</a>
                 </div>
                 {/* Gmail */}
                 <div className="flex items-center gap-5 group cursor-pointer">
@@ -221,7 +221,7 @@ export default function Home() {
                 {/* GitHub */}
                 <div className="flex items-center gap-5 group cursor-pointer">
                   <div className="w-11 h-11 bg-text-dark text-white rounded-xl flex items-center justify-center shadow-md group-hover:bg-accent-blue transition-colors"><Github size={20} /></div>
-                  <span className="font-bold text-sm tracking-tight underline decoration-accent-blue underline-offset-8 decoration-2 text-gray-800">https://github.com/IkhwanNazri</span>
+                  <a href="https://github.com/IkhwanNazri" className="font-bold text-sm tracking-tight underline decoration-accent-blue underline-offset-8 decoration-2 text-gray-800">IkhwanNazri</a>
                 </div>
               </div>
             </section>
