@@ -47,8 +47,8 @@ export default function Home() {
   ];
 
   const technicalSkills = [
-    { name: "Adobe Illustrator", color: "#FF9A00", logo: "ai" },
-    { name: "Photoshop", color: "#1774b6ff", logo: "ps" },
+    { name: "Adobe Illustrator", color: "#FF9A00", },
+    { name: "Photoshop", color: "#1774b6ff" },
     { name: "Laravel", color: "#FF2D20" },
     { name: "PHP", color: "#777BB4" },
     { name: "Microsoft", color: "#00A4EF", logo: "word" },
