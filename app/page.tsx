@@ -6,9 +6,15 @@ import { Mail, Github, Linkedin, Smartphone, Calendar, MapPin, Sparkles, Externa
 export default function Home() {
   const experiences = [
     {
+      role: "Penolong Pegawai Teknologi Maklumat",
+      company: "Kementerian Perpaduan Negara",
+      date: "May 2026 - now",
+
+    },
+    {
       role: "East net Computer Tg malim",
       company: "Graphic Designer",
-      date: "Jan 2025 - now",
+      date: "Jan 2025 - April 2026",
 
     },
     {
