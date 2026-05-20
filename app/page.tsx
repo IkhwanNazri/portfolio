@@ -6,9 +6,9 @@ import { Mail, Github, Linkedin, Smartphone, Calendar, MapPin, Sparkles, Externa
 export default function Home() {
   const experiences = [
     {
-      role: "Penolong Pegawai Teknologi Maklumat",
-      company: "Kementerian Perpaduan Negara",
-      date: "May 2026 - now",
+      role: "Kementerian Perpaduan Negara",
+      company: "Penolong Pegawai Teknologi Maklumat",
+      date: "May 2026 - NOW",
 
     },
     {
@@ -47,8 +47,8 @@ export default function Home() {
   ];
 
   const technicalSkills = [
-    { name: "Ai", color: "#FF9A00", logo: "ps" },
-    { name: "Ps", color: "#1774b6ff", logo: "ai" },
+    { name: "Adobe Illustrator", color: "#FF9A00", logo: "ai" },
+    { name: "Photoshop", color: "#1774b6ff", logo: "ps" },
     { name: "Laravel", color: "#FF2D20" },
     { name: "PHP", color: "#777BB4" },
     { name: "Microsoft", color: "#00A4EF", logo: "word" },
@@ -634,7 +634,7 @@ export default function Home() {
             </h2>
           </motion.div>
         </div>
-        <div className="marquee-container z-20">
+        <div className="marquee-contner z-20">
           <div className="animate-marquee whitespace-nowrap flex items-center gap-12 text-white/90 text-sm font-black tracking-widest uppercase">
             {[...Array(10)].map((_, i) => (
               <div key={i} className="flex items-center gap-8">
@@ -760,16 +760,16 @@ export default function Home() {
       <div className="fixed bottom-8 left-1/2 -translate-x-1/2 w-[90%] max-w-md bg-[#222] text-white py-3.5 px-6 rounded-[32px] flex items-center justify-between shadow-[0_20px_50px_rgba(0,0,0,0.5)] ring-1 ring-white/10 z-[100] hover:scale-105 transition-transform duration-500 border border-white/5">
         <div className="flex items-center gap-4">
           <div className="w-11 h-11 bg-accent-blue rounded-xl flex flex-col items-center justify-center font-black text-[9px] leading-tight text-center border border-white/10 ring-2 ring-accent-blue/20">
-            <span>PORT</span>
-            <span>FOLIO</span>
+            <span>IKHWAN</span>
+            <span>NAZRI</span>
           </div>
           <div>
-            <p className="text-[9px] font-black opacity-30 uppercase tracking-[0.2em]">Graphic Designer</p>
+            <p className="text-[9px] font-black opacity-30 uppercase tracking-[0.2em]">Fullstack Developer</p>
             <p className="font-black text-[12px] uppercase underline decoration-accent-blue decoration-2 underline-offset-4 tracking-tight">Ikhwan Nazri</p>
           </div>
         </div>
         <div className="flex items-center gap-3">
-          <button className="bg-white text-black px-5 py-2 rounded-full text-[11px] font-black hover:bg-accent-blue hover:text-white transition-all transform hover:scale-110 active:scale-95 shadow-md">Follow Me</button>
+          <a href="https://www.tiktok.com/@buildwith.wan" className="bg-white text-black px-5 py-2 rounded-full text-[11px] font-black hover:bg-accent-blue hover:text-white transition-all transform hover:scale-110 active:scale-95 shadow-md">Follow Me</button>
           <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center shadow-md animate-pulse">
             <Sparkles size={20} fill="currentColor" className="text-white" />
           </div>
