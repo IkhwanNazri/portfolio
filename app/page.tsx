@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, Github, Linkedin, Smartphone, Calendar, MapPin, Sparkles, ExternalLink, ArrowUpRight } from "lucide-react";
+import { Mail, Github, Sparkles, ArrowUpRight } from "lucide-react";
 
 export default function Home() {
   const experiences = [
@@ -47,13 +47,13 @@ export default function Home() {
   ];
 
   const technicalSkills = [
-    { name: "Adobe Illustrator", color: "#FF9A00", },
-    { name: "Photoshop", color: "#1774b6ff" },
-    { name: "Laravel", color: "#FF2D20" },
-    { name: "PHP", color: "#777BB4" },
-    { name: "Microsoft", color: "#00A4EF", logo: "word" },
-    { name: "Figma", color: "#F24E1E" }
-  ];
+  { name: "Ai", color: "#FF9A00" },
+  { name: "Ps", color: "#1774b6" },
+  { name: "Laravel", slug: "laravel", color: "#FF2D20" },
+  { name: "PHP", slug: "php", color: "#777BB4" },
+  { name: "Word", slug: "microsoftword", color: "#00A4EF" },
+  { name: "Figma", slug: "figma", color: "#F24E1E" },
+];
   const interests = ["Design", "Arts & Craft", "Music", "Cinema", "Design thinking", "Develop"];
 
   return (
@@ -209,7 +209,7 @@ export default function Home() {
             <div key={i} className="flex items-center gap-8">
               <span>PORTFOLIO</span>
               <div className="w-5 h-5 rounded-full border border-white/40 flex items-center justify-center"><Sparkles size={10} fill="currentColor" /></div>
-              <span>2025</span>
+              <span>2026</span>
               <div className="w-5 h-5 rounded-full border border-white/40 flex items-center justify-center font-bold text-[8px]">S</div>
               <span>IKHWAN NAZRI</span>
               <div className="w-5 h-5 rounded-full border border-white/40 flex items-center justify-center"><Sparkles size={10} fill="currentColor" /></div>
@@ -299,7 +299,7 @@ export default function Home() {
                       ) : (
                         <>
                           <img
-                            src={`https://cdn.simpleicons.org/${skill.name.toLowerCase()}`}
+                            src={`https://cdn.simpleicons.org/${skill.slug}`}
                             alt={skill.name}
                             className="w-7 h-7 md:w-9 md:h-9 brightness-0 invert"
                           />
@@ -426,7 +426,7 @@ export default function Home() {
               <div key={i} className="flex items-center gap-8">
                 <span>PORTFOLIO</span>
                 <div className="w-5 h-5 rounded-full border border-white/40 flex items-center justify-center"><Sparkles size={10} fill="currentColor" /></div>
-                <span>2025</span>
+                <span>2026</span>
                 <div className="w-5 h-5 rounded-full border border-white/40 flex items-center justify-center font-bold text-[8px]">S</div>
                 <span>IKHWAN NAZRI</span>
                 <div className="w-5 h-5 rounded-full border border-white/40 flex items-center justify-center"><Sparkles size={10} fill="currentColor" /></div>
@@ -457,7 +457,7 @@ export default function Home() {
             <div key={i} className="flex items-center gap-8">
               <span>PORTFOLIO</span>
               <div className="w-5 h-5 rounded-full border border-white/40 flex items-center justify-center"><Sparkles size={10} fill="currentColor" /></div>
-              <span>2025</span>
+              <span>2026</span>
               <div className="w-5 h-5 rounded-full border border-white/40 flex items-center justify-center font-bold text-[8px]">S</div>
               <span>IKHWAN NAZRI</span>
               <div className="w-5 h-5 rounded-full border border-white/40 flex items-center justify-center"><Sparkles size={10} fill="currentColor" /></div>
@@ -488,6 +488,22 @@ export default function Home() {
           {[
             {
               id: "01",
+              title: "Persidangan Pembinaan Negara Bangsa",
+              category: "Full-stack Event Management System",
+              img: "/images/Negara.jpg",
+              link: "https://negarabangsa.perpaduan.gov.my/",
+              tech: ["Next JS", "Laravel API", "Google Script","MySQL"]
+            },
+            {
+              id: "02",
+              title: "Sistem Pegawai Bertugas Kementerian Perpaduan Negara",
+              category: "Full-stack Report Management System",
+              img: "/images/spb.png",
+              link: "http://10.28.140.175/login",
+              tech: ["Laravel", "Vue Js","Inertia", "MySQL"]
+            },
+            {
+              id: "03",
               title: "Pusat Tuisyen Akademik Terbilang",
               category: "Full-stack Tuition Management System",
               img: "/images/pusat.png",
@@ -495,15 +511,7 @@ export default function Home() {
               tech: ["Laravel", "Filament", "Tailwind CSS"]
             },
             {
-              id: "02",
-              title: "EJOY HOMESTAY",
-              category: "BOOKING LANDING PAGE",
-              img: "/images/ejoy.png",
-              link: "https://homestaypaklong.netlify.app/",
-              tech: ["Tailwind Css", "Google Sheet"]
-            },
-            {
-              id: "03",
+              id: "04",
               title: "Eastnet",
               category: "Acrtylic Website",
               img: "/images/EASTT.png",
@@ -511,7 +519,16 @@ export default function Home() {
               tech: ["Tailwind CSS"]
             },
             {
-              id: "04",
+              id: "05",
+              title: "EJOY HOMESTAY",
+              category: "BOOKING LANDING PAGE",
+              img: "/images/ejoy.png",
+              link: "https://homestaypaklong.netlify.app/",
+              tech: ["Tailwind Css", "Google Sheet"]
+            },
+            
+            {
+              id: "06",
               title: "Klang Gadget Store",
               category: "GADGET WEBSITE",
               img: "/images/klang.png",
@@ -520,7 +537,7 @@ export default function Home() {
             },
 
             {
-              id: "05",
+              id: "07",
               title: "GAFSTORE",
               category: "GADGET LANDING PAGE",
               img: "/images/ig.png",
@@ -528,7 +545,7 @@ export default function Home() {
               tech: ["Bootstrap"]
             },
             {
-              id: "06",
+              id: "08",
               title: "SAUNSIS SERVICES",
               category: "BOOKING WEBSITE",
               img: "/images/saunis.png",
@@ -537,7 +554,7 @@ export default function Home() {
             },
 
             {
-              id: "07",
+              id: "09",
               title: "CARA PILIHAN RESEPI",
               category: "LANDING PAGE",
               img: "/images/3.png",
@@ -545,7 +562,7 @@ export default function Home() {
               tech: ["Wordpress"]
             },
             {
-              id: "08",
+              id: "10",
               title: "KING ODEN",
               category: "FOOD",
               img: "/images/4.png",
@@ -610,7 +627,7 @@ export default function Home() {
               <div key={i} className="flex items-center gap-8">
                 <span>PORTFOLIO</span>
                 <div className="w-5 h-5 rounded-full border border-white/40 flex items-center justify-center"><Sparkles size={10} fill="currentColor" /></div>
-                <span>2025</span>
+                <span>2026</span>
                 <div className="w-5 h-5 rounded-full border border-white/40 flex items-center justify-center font-bold text-[8px]">S</div>
                 <span>IKHWAN NAZRI</span>
                 <div className="w-5 h-5 rounded-full border border-white/40 flex items-center justify-center"><Sparkles size={10} fill="currentColor" /></div>
@@ -640,7 +657,7 @@ export default function Home() {
               <div key={i} className="flex items-center gap-8">
                 <span>PORTFOLIO</span>
                 <div className="w-5 h-5 rounded-full border border-white/40 flex items-center justify-center"><Sparkles size={10} fill="currentColor" /></div>
-                <span>2025</span>
+                <span>2026</span>
                 <div className="w-5 h-5 rounded-full border border-white/40 flex items-center justify-center font-bold text-[8px]">S</div>
                 <span>IKHWAN NAZRI</span>
                 <div className="w-5 h-5 rounded-full border border-white/40 flex items-center justify-center"><Sparkles size={10} fill="currentColor" /></div>
